@@ -16,8 +16,11 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 text-sm">
           {/* Brand */}
           <div className="space-y-3">
-            <div className="flex items-center gap-2 text-lg font-bold text-white">
-              <span className="w-2.5 h-2.5 rounded-full bg-[#6366F1]" />
+            <div className="flex items-center gap-2.5 text-lg font-bold text-white">
+              <div className="w-6 h-6 rounded-lg bg-[#0E1017] border border-indigo-500/40 flex items-center justify-center text-[10px] font-black tracking-tight shadow-md shadow-indigo-500/20">
+                <span className="text-white">4</span>
+                <span className="bg-gradient-to-br from-[#818CF8] to-[#C084FC] bg-clip-text text-transparent">K</span>
+              </div>
               <span>4K SHOOT</span>
             </div>
             <p className="text-sm text-[#94A3B8] leading-relaxed">

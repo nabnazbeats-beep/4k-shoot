@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, ArrowUpRight, Camera } from "lucide-react";
+import { Menu, X, ArrowUpRight } from "lucide-react";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -37,8 +37,11 @@ export default function Navbar() {
         <div className="flex items-center justify-between gap-4">
           {/* Brand Logo Pill */}
           <Link href="#" className="flex items-center gap-2.5 group shrink-0">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-[#6366F1] to-[#8B5CF6] flex items-center justify-center text-white shadow-md shadow-indigo-500/25 group-hover:scale-105 transition-transform">
-              <Camera className="w-4 h-4" />
+            <div className="w-8 h-8 rounded-xl bg-[#0E1017] border border-indigo-500/40 flex items-center justify-center shadow-lg shadow-indigo-500/20 group-hover:border-indigo-400 group-hover:scale-105 transition-all">
+              <span className="font-black text-xs tracking-tight select-none">
+                <span className="text-white">4</span>
+                <span className="bg-gradient-to-br from-[#818CF8] to-[#C084FC] bg-clip-text text-transparent">K</span>
+              </span>
             </div>
             <span className="text-base sm:text-lg font-extrabold tracking-tight text-white uppercase font-sans">
               4K SHOOT
